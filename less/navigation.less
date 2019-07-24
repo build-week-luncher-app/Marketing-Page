@@ -1,0 +1,42 @@
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 10vh;
+  background: red;
+  justify-content: space-around;
+  align-items: center;
+
+  .logo {
+    margin: 5%;
+    cursor: pointer;
+
+    .logo-a {
+      color: white;
+      font-size: 4rem;
+      width: 50%;
+      height: 100%;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+
+    .nav-a {
+      color: white;
+      text-decoration: none;
+      font-size: 2rem;
+
+      .nav-links .nav-a {
+        transform: scale(1.1);
+      }
+    }    
+  }
+}

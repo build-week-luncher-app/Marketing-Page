@@ -134,14 +134,14 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Quicksand', sans-serif;
 }
 h1 {
   font-size: 4rem;
@@ -167,4 +167,84 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 10vh;
+  background: red;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .logo {
+  margin: 5%;
+  cursor: pointer;
+}
+nav .logo .logo-a {
+  color: white;
+  font-size: 4rem;
+  width: 50%;
+  height: 100%;
+  font-weight: 600;
+  text-decoration: none;
+}
+nav .nav-links {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+}
+nav .nav-links .nav-a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+nav .nav-links .nav-a .nav-links .nav-a {
+  transform: scale(1.1);
+}
+section {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+section .hero {
+  position: relative;
+  height: 90%;
+  width: 100%;
+}
+section .hero::after {
+  content: "";
+  background: black;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+section .hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section .headline {
+  position: absolute;
+  top: 80%;
+  left: 15%;
+  font-size: 10rem;
+  transform: translate(-40%, -90%);
+  color: white;
+  z-index: 3;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
 }
