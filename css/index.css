@@ -176,17 +176,18 @@ nav {
   justify-content: space-around;
   align-items: center;
 }
-nav .logo {
-  margin: 5%;
-  cursor: pointer;
-}
-nav .logo .logo-a {
-  color: white;
-  font-size: 4rem;
-  width: 50%;
+nav .logo-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+  border-radius: 0% 2% 99%;
+  width: 30%;
   height: 100%;
-  font-weight: 600;
-  text-decoration: none;
+}
+nav .logo-container .logo {
+  margin-bottom: 3%;
+  width: 60%;
 }
 nav .nav-links {
   display: flex;
