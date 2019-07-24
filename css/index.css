@@ -156,6 +156,7 @@ h4 {
 }
 p {
   line-height: 1.5;
+  letter-spacing: 1.2;
   font-size: 1.6rem;
   padding-bottom: 10px;
 }
@@ -206,6 +207,30 @@ nav .nav-links .nav-a {
 nav .nav-links .nav-a .nav-links .nav-a {
   transform: scale(1.1);
 }
+footer {
+  width: 100%;
+  height: 20vh;
+  background-color: red;
+}
+footer .footer-ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+}
+footer .footer-ul .footer-a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  list-style: none;
+  color: white;
+  cursor: pointer;
+}
+footer .copyright {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
 section {
   display: flex;
   height: 80vh;
@@ -248,4 +273,30 @@ section .headline {
   width: 100%;
   height: 100vh;
   z-index: -1;
+}
+.main-content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.main-content .mission-statement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  height: 100%;
+}
+.main-content .mission-statement .mission-btn {
+  background-color: red;
+  color: white;
+  width: 50%;
+  height: 10%;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 20px;
+}
+.main-content .mission-img {
+  width: 45%;
+  height: 100%;
 }

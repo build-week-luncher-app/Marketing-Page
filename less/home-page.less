@@ -47,4 +47,32 @@ section {
   z-index: -1;
 }
 
+.main-content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  width: 100%;
 
+  .mission-statement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    height: 100%;
+
+    .mission-btn {
+      background-color: red;
+      color: white;
+      width: 50%;
+      height: 10%;
+      font-size: 1.6rem;
+      font-weight: 600;
+      border-radius: 20px;
+    }
+  }
+
+  .mission-img {
+    width: 45%;
+    height: 100%;
+  }
+}
