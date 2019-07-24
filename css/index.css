@@ -399,11 +399,11 @@ hr {
   justify-content: center;
   margin: 5px 0;
 }
-.fa .fa-icon {
+.fa .fa {
   margin: 0 10px;
   cursor: pointer;
   color: black;
 }
-.fa .fa-icon:hover {
+.fa .fa:hover {
   transform: scale(1.05);
 }
