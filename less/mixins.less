@@ -1,0 +1,22 @@
+// Mixins in here
+
+.displayFlex(@flex-flow, @align, @justify) {
+  display: flex;
+  flex-flow: @flex-flow;
+  align-items: @align;
+  justify-content: @justify;
+}
+
+// Button Mixin
+
+.buttonStyle(@width, @height, @color, @bg-color, @border, @border-r) {
+  width: @width;
+  height: @height;
+  color: @color;
+  background-color: @bg-color;
+  border: @border;
+  border-radius: @border-r;
+}
+
+// Animation Mixins 
+
