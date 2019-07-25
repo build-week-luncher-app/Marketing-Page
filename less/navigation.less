@@ -6,6 +6,10 @@ nav {
   justify-content: space-around;
   align-items: center;
 
+  @media @tablet {
+    position: relative;
+  }
+
   .logo-container {
     display: flex;
     justify-content: space-around;
@@ -15,9 +19,26 @@ nav {
     width: 30%;
     height: 100%;
 
+    @media @tablet {
+      border-radius: 100%;
+      justify-content: center;
+    }
+
     .logo {
+      display: flex;
+      align-items: center;
       margin-bottom: 3%;
       width: 60%;
+    }
+
+    @media @tablet {
+      width: 50%;
+    }
+
+    @media @tablet {
+      img.logo {
+        margin-left: 18%;
+      }
     }
   }
 
@@ -30,6 +51,25 @@ nav {
     align-items: center;
     margin-left: auto;
 
+    @media @tablet {
+      position: fixed;
+      background: red;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      z-index: 5;
+      clip-path: circle(100px at 90% -10%);
+      -webkit-clip-path: circle(100px at 90% -10%);
+      transition: all 1s ease-out;
+    }
+
+    @media @tablet {
+      .nav-links.open {
+        clip-path: circle(1200px at 90% -10%);
+        -webkit-clip-path: circle(1200px at 90% -10%);
+      }
+    }
+
     .nav-a {
       color: white;
       text-decoration: none;
@@ -39,5 +79,23 @@ nav {
         transform: scale(1.1);
       }
     }    
+  }
+}
+
+@media @tablet {
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+    z-index: 6;
   }
 }

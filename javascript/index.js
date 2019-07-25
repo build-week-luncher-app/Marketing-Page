@@ -2,7 +2,13 @@ const hero = document.querySelector('.hero');
 const slider = document.querySelector('.slider');
 const logo = document.querySelector('.logo');
 const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+const links = document.querySelectorAll('.nav-a')
 const headline = document.querySelector('.headline');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
+})
 
 const tl = new TimelineMax();
 

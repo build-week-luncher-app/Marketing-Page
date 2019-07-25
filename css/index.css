@@ -177,6 +177,11 @@ nav {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 768px) {
+  nav {
+    position: relative;
+  }
+}
 nav .logo-container {
   display: flex;
   justify-content: space-around;
@@ -186,9 +191,27 @@ nav .logo-container {
   width: 30%;
   height: 100%;
 }
+@media (max-width: 768px) {
+  nav .logo-container {
+    border-radius: 100%;
+    justify-content: center;
+  }
+}
 nav .logo-container .logo {
+  display: flex;
+  align-items: center;
   margin-bottom: 3%;
   width: 60%;
+}
+@media (max-width: 768px) {
+  nav .logo-container {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  nav .logo-container img.logo {
+    margin-left: 18%;
+  }
 }
 nav .nav-links {
   display: flex;
@@ -199,6 +222,25 @@ nav .nav-links {
   align-items: center;
   margin-left: auto;
 }
+@media (max-width: 768px) {
+  nav .nav-links {
+    position: fixed;
+    background: red;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    z-index: 5;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+  }
+}
+@media (max-width: 768px) {
+  nav .nav-links .nav-links.open {
+    clip-path: circle(1200px at 90% -10%);
+    -webkit-clip-path: circle(1200px at 90% -10%);
+  }
+}
 nav .nav-links .nav-a {
   color: white;
   text-decoration: none;
@@ -206,6 +248,22 @@ nav .nav-links .nav-a {
 }
 nav .nav-links .nav-a .nav-links .nav-a {
   transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+  }
+  .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+    z-index: 6;
+  }
 }
 footer {
   width: 100%;
@@ -266,6 +324,13 @@ section .headline {
   color: white;
   z-index: 3;
 }
+@media (max-width: 768px) {
+  section .headline {
+    top: 80%;
+    left: 25%;
+    font-size: 9rem;
+  }
+}
 .slider {
   position: absolute;
   top: 0;
@@ -280,12 +345,27 @@ section .headline {
   justify-content: space-evenly;
   width: 100%;
 }
+@media (max-width: 768px) {
+  .main-content {
+    flex-flow: column wrap;
+  }
+}
 .main-content .mission-statement {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 45%;
   height: 100%;
+}
+@media (max-width: 768px) {
+  .main-content .mission-statement {
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10%;
+  }
+}
+.main-content .mission-statement .mission-statement h2 {
+  font-size: 4rem;
 }
 .main-content .mission-statement .mission-btn {
   background-color: red;
@@ -296,18 +376,26 @@ section .headline {
   font-weight: 600;
   border-radius: 20px;
 }
+@media (max-width: 768px) {
+  .main-content .mission-statement .mission-btn {
+    width: 100%;
+    height: 20%;
+  }
+}
 .main-content .mission-img {
   width: 45%;
   height: 100%;
 }
-/* About LYBL Component */
+@media (max-width: 768px) {
+  .main-content .mission-img {
+    width: 80%;
+  }
+}
 h2 {
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 600;
-  margin-left: 4rem;
   text-align: center;
-  border: 2px solid black;
-  width: 25%;
+  width: 100%;
 }
 h3 {
   font-size: 2.2rem;
@@ -315,11 +403,11 @@ h3 {
   margin: 0 auto;
 }
 p {
-  font-size: 1.4rem;
+  font-size: 2rem;
   margin: 0 auto;
 }
 hr {
-  width: 50%;
+  width: 75%;
   border-top: 4px solid black;
 }
 /* About Section */
