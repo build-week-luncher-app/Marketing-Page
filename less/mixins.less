@@ -1,0 +1,24 @@
+// Mixins Here
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-radius (@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.btn-mixin (@btn-size, @btn-width, @btn-height) {
+    .btn-radius(10px);
+    font-size: @btn-size;
+    width: @btn-width;
+    height: @btn-height;
+}
+
+.btn-rev-color() {
+    color: @btn-bg-color;
+}
