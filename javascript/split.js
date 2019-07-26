@@ -1,19 +1,19 @@
 const left = document.querySelector('.left-content');
-const right = document.querySelector('.right-right');
+const right = document.querySelector('.right-content');
 const mainContent = document.querySelector('.main-content');
 
 left.addEventListener('mouseenter', () => {
-  ServiceWorkerContainer.classList.add('hover-left');
+  mainContent.classList.add('hover-left');
 });
 
 left.addEventListener('mouseleave', () => {
-  ServiceWorkerContainer.classList.remove('hover-left');
+  mainContent.classList.remove('hover-left');
 });
 
 right.addEventListener('mouseenter', () => {
-  ServiceWorkerContainer.classList.add('hover-right');
+  mainContent.classList.add('hover-right');
 });
 
 right.addEventListener('mouseleave', () => {
-  ServiceWorkerContainer.classList.remove('hover-right');
+  mainContent.classList.remove('hover-right');
 });

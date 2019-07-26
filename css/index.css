@@ -229,7 +229,6 @@ img {
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
-  background: gray;
 }
 .main-content .left-content {
   left: 0;
@@ -239,6 +238,7 @@ img {
   width: 50%;
   height: 100%;
   overflow: hidden;
+  transition: 1000ms all ease-in-out;
 }
 .main-content .left-content h1 {
   font-size: 4rem;
@@ -249,25 +249,45 @@ img {
   transform: translateX(-50%);
   white-space: nowrap;
 }
+@media (max-width: 500px) {
+  .main-content .left-content h1 {
+    font-size: 3rem;
+  }
+}
 .main-content .left-content .split-button {
   display: block;
   position: absolute;
   top: 40%;
   left: 50%;
-  height: 2.5rem;
-  padding-top: 1.3rem;
+  height: 5rem;
+  padding-top: 1.2rem;
   width: 15rem;
   text-align: center;
   color: #fff;
-  border: #fff solid 2rem;
-  font-size: 1rem;
+  border: #fff solid 0.3rem;
+  font-size: 2rem;
   font-weight: 600;
   text-decoration: none;
   transform: translateX(-50%);
 }
-.main-content .left-content .left-content .split-button:hover {
-  background: rgba(71, 178, 255, 0.3);
-  border-color: rgba(71, 178, 255, 0.3);
+@media (max-width: 500px) {
+  .main-content .left-content .split-button {
+    width: 12rem;
+  }
+}
+.main-content .left-content .split-button:hover {
+  background: #47b2ff;
+  opacity: 0.7;
+  border-color: #47b2ff;
+}
+.main-content .left-content:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #006dbc;
+  opacity: 0.7;
+  transition: 1000ms all ease-in-out;
 }
 .main-content .right-content {
   right: 0;
@@ -277,6 +297,7 @@ img {
   width: 50%;
   height: 100%;
   overflow: hidden;
+  transition: 1000ms all ease-in-out;
 }
 .main-content .right-content h1 {
   font-size: 4rem;
@@ -287,25 +308,63 @@ img {
   transform: translateX(-50%);
   white-space: nowrap;
 }
+@media (max-width: 500px) {
+  .main-content .right-content h1 {
+    font-size: 3rem;
+  }
+}
 .main-content .right-content .split-button {
   display: block;
   position: absolute;
   top: 40%;
   left: 50%;
-  height: 2.5rem;
-  padding-top: 1.3rem;
+  height: 5rem;
+  padding-top: 1.2rem;
   width: 15rem;
   text-align: center;
   color: #fff;
-  border: #fff solid 2rem;
-  font-size: 1rem;
+  border: #fff solid 0.3rem;
+  font-size: 2rem;
   font-weight: 600;
   text-decoration: none;
   transform: translateX(-50%);
 }
-.main-content .right-content .right-content .split-button:hover {
-  background: rgba(51, 161, 161, 0.3);
-  border-color: rgba(51, 161, 161, 0.3);
+@media (max-width: 500px) {
+  .main-content .right-content .split-button {
+    width: 12rem;
+  }
+}
+.main-content .right-content .split-button:hover {
+  background: #33a1a1;
+  opacity: 0.7;
+  border-color: #33a1a1;
+}
+.main-content .right-content:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #2f4f4f;
+  opacity: 0.7;
+  transition: 1000ms all ease-in-out;
+}
+.hover-left .left-content {
+  width: 75%;
+}
+.hover-left .right-content {
+  width: 25%;
+}
+.hover-left .right-content:before {
+  z-index: 2;
+}
+.hover-right .right-content {
+  width: 75%;
+}
+.hover-right .left-content {
+  width: 25%;
+}
+.hover-right .left-content:before {
+  z-index: 2;
 }
 footer {
   width: 100%;

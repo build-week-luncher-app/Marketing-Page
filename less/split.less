@@ -3,7 +3,6 @@
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
-  background: gray;
 
   .left-content {
     left: 0;
@@ -13,6 +12,7 @@
     width: 50%;
     height: 100%;
     overflow: hidden;
+    transition: @speed all ease-in-out;
 
     h1 {
       font-size: 4rem;
@@ -22,6 +22,10 @@
       left: 50%;
       transform: translateX(-50%);
       white-space: nowrap;
+
+      @media @phone {
+        font-size: 3rem;
+      }
     }
 
     .split-button {
@@ -29,22 +33,37 @@
       position: absolute;
       top: 40%;
       left: 50%;
-      height: 2.5rem;
-      padding-top: 1.3rem;
+      height: 5rem;
+      padding-top: 1.2rem;
       width: 15rem;
       text-align: center;
       color: #fff;
-      border: #fff solid 2rem;
-      font-size: 1rem;
+      border: #fff solid 0.3rem;
+      font-size: 2rem;
       font-weight: 600;
       text-decoration: none;
       transform: translateX(-50%);
+
+      @media @phone {
+        width: 12rem;
+      }
     }
 
-    .left-content .split-button:hover {
+    .split-button:hover {
       background: @leftBtnHover;
+      opacity: 0.7;
       border-color: @leftBtnHover;
     }
+  }
+
+  .left-content:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: @leftColor;
+    opacity: .7;
+    transition: @speed all ease-in-out;
   }
 
   .right-content {
@@ -55,6 +74,7 @@
     width: 50%;
     height: 100%;
     overflow: hidden;
+    transition: @speed all ease-in-out;
 
     h1 {
       font-size: 4rem;
@@ -64,6 +84,10 @@
       left: 50%;
       transform: translateX(-50%);
       white-space: nowrap;
+
+      @media @phone {
+        font-size: 3rem;
+      }
     }
 
     .split-button {
@@ -71,21 +95,61 @@
       position: absolute;
       top: 40%;
       left: 50%;
-      height: 2.5rem;
-      padding-top: 1.3rem;
+      height: 5rem;
+      padding-top: 1.2rem;
       width: 15rem;
       text-align: center;
       color: #fff;
-      border: #fff solid 2rem;
-      font-size: 1rem;
+      border: #fff solid 0.3rem;
+      font-size: 2rem;
       font-weight: 600;
       text-decoration: none;
       transform: translateX(-50%);
+
+      @media @phone {
+        width: 12rem;
+      }
     }
 
-    .right-content .split-button:hover {
+    .split-button:hover {
       background: @rightBtnHover;
+      opacity: 0.7;
       border-color: @rightBtnHover;
     }
   }
+
+  .right-content:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: @rightColor;
+    opacity: .7;
+    transition: @speed all ease-in-out;
+  }
+}
+
+
+.hover-left .left-content {
+  width: @hover-width;
+}
+
+.hover-left .right-content {
+  width: @other-width;
+}
+
+.hover-left .right-content:before {
+  z-index: 2;
+}
+
+.hover-right .right-content {
+  width: @hover-width;
+}
+
+.hover-right .left-content {
+  width: @other-width;
+}
+
+.hover-right .left-content:before {
+  z-index: 2;
 }
