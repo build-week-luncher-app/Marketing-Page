@@ -12,7 +12,7 @@ let swiper = new Swiper('.swiper-container', {
   coverflowEffect: {
     rotate: 60,
     stretch: 0,
-    depth: 400,
+    depth: 300,
     modifier: 1,
     slideShadows : true,
   },
