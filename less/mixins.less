@@ -7,20 +7,23 @@
   justify-content: @justify;
 }
 
-.navLink(@text-d, @color, @font-s) {
+.navLink(@text-d, @color, @font-s, @cursor) {
   font-family: 'Roboto', sans-serif;
   text-decoration: @text-d;
   color: @color;
   font-size: @font-s;
+  cursor: @cursor;
 }
 
 // Button Mixin
 
-.buttonStyle(@width, @height, @color, @bg-color, @border, @border-r) {
+.buttonStyle(@width, @height, @color, @bg-color, @border, @border-r, @cursor, @font-s) {
   width: @width;
   height: @height;
   color: @color;
   background-color: @bg-color;
   border: @border;
   border-radius: @border-r;
+  cursor: @cursor;
+  font-size: @font-s;
 }

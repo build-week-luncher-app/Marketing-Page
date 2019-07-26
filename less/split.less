@@ -1,0 +1,91 @@
+.main-content {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  background: gray;
+
+  .left-content {
+    left: 0;
+    background: url('/src/img/9.jpg') center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+
+    h1 {
+      font-size: 4rem;
+      color: #fff;
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+    }
+
+    .split-button {
+      display: block;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      height: 2.5rem;
+      padding-top: 1.3rem;
+      width: 15rem;
+      text-align: center;
+      color: #fff;
+      border: #fff solid 2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transform: translateX(-50%);
+    }
+
+    .left-content .split-button:hover {
+      background: @leftBtnHover;
+      border-color: @leftBtnHover;
+    }
+  }
+
+  .right-content {
+    right: 0;
+    background: url('/src/img/17.jpg') center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+
+    h1 {
+      font-size: 4rem;
+      color: #fff;
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+    }
+
+    .split-button {
+      display: block;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      height: 2.5rem;
+      padding-top: 1.3rem;
+      width: 15rem;
+      text-align: center;
+      color: #fff;
+      border: #fff solid 2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transform: translateX(-50%);
+    }
+
+    .right-content .split-button:hover {
+      background: @rightBtnHover;
+      border-color: @rightBtnHover;
+    }
+  }
+}
