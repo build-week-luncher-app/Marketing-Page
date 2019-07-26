@@ -1,4 +1,4 @@
-section {
+.hero-section {
   display: flex;
   height: 80vh;
   justify-content: center;
@@ -50,4 +50,144 @@ section {
   width: 100%;
   height: 100vh;
   z-index: -1;
+}
+
+.main-section {
+  height: 80vh;
+}
+
+.lower-about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background:darkslategray;
+
+  .test-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 900px;
+    height: 600px;
+    background: #fff;
+    margin: 20px;
+
+    @media @tablet {
+      height: auto;
+    }
+
+    .test-img {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: 100%;
+      background: #006dbc;
+
+      @media @tablet {
+        padding: 40px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      img {
+        position: relative;
+        width: 700px;
+        left: -20%;
+
+        @media @tablet {
+          left: initial;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .test-img:before {
+      content: 'GIVE';
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: #000;
+      opacity: .1;
+      font-size: 9rem;
+      font-weight: 800;
+
+      @media @tablet {
+        color: #fff;
+        opacity: .5;
+        z-index: 1;
+      }
+    }
+
+    .test-img:after {
+      content: 'BACK';
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      color: #000;
+      opacity: .1;
+      font-size: 9rem;
+      font-weight: 800;
+
+      @media @tablet {
+        color: #fff;
+        opacity: .5;
+        z-index: 1;
+      }
+    }
+      
+    .test-details {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: 100%;
+      padding: 40px;
+
+      @media @tablet {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+      }
+
+      .test-details h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 2.5rem;
+        line-height: 0.8em;
+        color: #444;    
+      }
+
+      .test-details p {
+        max-width: 85%;
+        margin-left: 15%;
+        color: #333;
+        font-size: 1.5rem;
+
+        @media @tablet {
+          max-width: 100%;
+          margin-left: 0;
+        }
+      }
+
+      .test-btn {
+        background: #006dbc;
+        color: #fff;
+        border: none;
+        box-shadow: none;
+        padding: 15px 20px;
+        margin-top: 5px;
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+        font-weight: 600;
+        border-radius: 40px;
+        float: right;
+        cursor: pointer;
+      }
+    }
+  }
 }

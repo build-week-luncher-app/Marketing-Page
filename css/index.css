@@ -251,18 +251,18 @@ footer .copyright {
   color: white;
   font-weight: 600;
 }
-section {
+.hero-section {
   display: flex;
   height: 80vh;
   justify-content: center;
   align-items: center;
 }
-section .hero {
+.hero-section .hero {
   position: relative;
   height: 90%;
   width: 100%;
 }
-section .hero::after {
+.hero-section .hero::after {
   content: "";
   background: black;
   opacity: 0.3;
@@ -272,12 +272,12 @@ section .hero::after {
   left: 0;
   top: 0;
 }
-section .hero img {
+.hero-section .hero img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-section .headline {
+.hero-section .headline {
   position: absolute;
   top: 50%;
   left: 5%;
@@ -286,8 +286,8 @@ section .headline {
   color: white;
   z-index: 3;
 }
-@media (max-width: 500px) {
-  section .headline {
+@media (max-width: 800px) {
+  .hero-section .headline {
     top: 50%;
     font-size: 7.5rem;
   }
@@ -299,4 +299,140 @@ section .headline {
   width: 100%;
   height: 100vh;
   z-index: -1;
+}
+.main-section {
+  height: 80vh;
+}
+.lower-about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: darkslategray;
+}
+.lower-about-content .test-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 900px;
+  height: 600px;
+  background: #fff;
+  margin: 20px;
+}
+@media (max-width: 1000px) {
+  .lower-about-content .test-container {
+    height: auto;
+  }
+}
+.lower-about-content .test-container .test-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background: #006dbc;
+}
+@media (max-width: 1000px) {
+  .lower-about-content .test-container .test-img {
+    padding: 40px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+  }
+}
+.lower-about-content .test-container .test-img img {
+  position: relative;
+  width: 700px;
+  left: -20%;
+}
+@media (max-width: 1000px) {
+  .lower-about-content .test-container .test-img img {
+    left: initial;
+    max-width: 100%;
+  }
+}
+.lower-about-content .test-container .test-img:before {
+  content: 'GIVE';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #000;
+  opacity: 0.1;
+  font-size: 9rem;
+  font-weight: 800;
+}
+@media (max-width: 1000px) {
+  .lower-about-content .test-container .test-img:before {
+    color: #fff;
+    opacity: 0.5;
+    z-index: 1;
+  }
+}
+.lower-about-content .test-container .test-img:after {
+  content: 'BACK';
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #000;
+  opacity: 0.1;
+  font-size: 9rem;
+  font-weight: 800;
+}
+@media (max-width: 1000px) {
+  .lower-about-content .test-container .test-img:after {
+    color: #fff;
+    opacity: 0.5;
+    z-index: 1;
+  }
+}
+.lower-about-content .test-container .test-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  padding: 40px;
+}
+@media (max-width: 1000px) {
+  .lower-about-content .test-container .test-details {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+}
+.lower-about-content .test-container .test-details .test-details h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.5rem;
+  line-height: 0.8em;
+  color: #444;
+}
+.lower-about-content .test-container .test-details .test-details p {
+  max-width: 85%;
+  margin-left: 15%;
+  color: #333;
+  font-size: 1.5rem;
+}
+@media (max-width: 1000px) {
+  .lower-about-content .test-container .test-details .test-details p {
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+.lower-about-content .test-container .test-details .test-btn {
+  background: #006dbc;
+  color: #fff;
+  border: none;
+  box-shadow: none;
+  padding: 15px 20px;
+  margin-top: 5px;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border-radius: 40px;
+  float: right;
+  cursor: pointer;
 }
