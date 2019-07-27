@@ -135,6 +135,7 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 h1,
 h2,
@@ -220,9 +221,9 @@ img {
   font-weight: 600;
 }
 .team .swiper-container .swiper-slide .dev-info span {
-  color: blue;
+  color: #1356a4;
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 .main-content {
   position: relative;
@@ -285,7 +286,7 @@ img {
   content: "";
   width: 100%;
   height: 100%;
-  background: #006dbc;
+  background: #1356a4;
   opacity: 0.7;
   transition: 1000ms all ease-in-out;
 }
@@ -428,6 +429,7 @@ footer .copyright {
   transform: translate(-5%, -50%);
   color: white;
   z-index: 3;
+  font-weight: 600;
 }
 @media (max-width: 800px) {
   .hero-section .headline {
@@ -448,7 +450,7 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   min-height: 80vh;
-  background: darkslategray;
+  background: #2f4f4f;
 }
 .lower-about-content .test-container {
   position: relative;
@@ -472,7 +474,7 @@ footer .copyright {
   align-items: center;
   width: 50%;
   height: 100%;
-  background: #006dbc;
+  background: #1356a4;
 }
 @media (max-width: 1000px) {
   .lower-about-content .test-container .test-img {
@@ -566,7 +568,7 @@ footer .copyright {
   width: "";
   height: "";
   color: #fff;
-  background-color: #006dbc;
+  background-color: #1356a4;
   border: none;
   border-radius: 40px;
   cursor: pointer;
@@ -577,4 +579,7 @@ footer .copyright {
   letter-spacing: 1px;
   font-weight: 600;
   float: right;
+}
+.lower-about-content .test-container .test-details .test-btn:hover {
+  transform: scale(1.1);
 }

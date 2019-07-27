@@ -1,3 +1,4 @@
+// Landing image and content with animations using GSAP
 .hero-section {
   display: flex;
   height: 100vh;
@@ -35,6 +36,7 @@
     transform: translate(-5%, -50%);
     color: white;
     z-index: 3;
+    font-weight: 600;
 
     @media @mobile {
       top: 50%;
@@ -43,6 +45,7 @@
   }
 }
 
+// Slider for the visual effect of the hero image
 .slider {
   position: absolute;
   top: 0;
@@ -52,14 +55,13 @@
   z-index: -1;
 }
 
-
-
+// Lower Content Prelude to Testimonials
 .lower-about-content {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 80vh;
-  background:darkslategray;
+  background: @rightColor;
 
   .test-container {
     position: relative;
@@ -82,7 +84,7 @@
       align-items: center;
       width: 50%;
       height: 100%;
-      background: #006dbc;
+      background: @leftColor;
 
       @media @tablet {
         padding: 40px;
@@ -173,13 +175,17 @@
       }
 
       .test-btn {
-        .buttonStyle("", "", #fff, #006dbc, none, 40px, pointer, 1.6rem);
+        .buttonStyle("", "", #fff, @leftColor, none, 40px, pointer, 1.6rem);
         box-shadow: none;
         padding: 15px 20px;
         margin-top: 5px;
         letter-spacing: 1px;
         font-weight: 600;
         float: right;
+      }
+
+      .test-btn:hover {
+        transform: scale(1.1);
       }
     }
   }
