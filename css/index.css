@@ -233,7 +233,7 @@ img {
 }
 .main-content .left-content {
   left: 0;
-  background: url('/src/img/9.jpg') center center no-repeat;
+  background: url('/src/img/9.png') center center no-repeat;
   background-size: cover;
   position: absolute;
   width: 50%;
@@ -292,7 +292,7 @@ img {
 }
 .main-content .right-content {
   right: 0;
-  background: url('/src/img/17.jpg') center center no-repeat;
+  background: url('/src/img/17.png') center center no-repeat;
   background-size: cover;
   position: absolute;
   width: 50%;
