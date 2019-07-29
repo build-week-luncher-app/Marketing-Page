@@ -360,21 +360,48 @@ img {
 .hover-right .left-content:before {
   z-index: 2;
 }
+.test {
+  height: 100vh;
+  width: 100%;
+}
 .modal {
-  display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
   overflow: auto;
-  background: #fff;
 }
-.modal .modal-btn {
-  background: #1356a4;
-  color: #fff;
-  border: 0;
+.modal .modal-content {
+  background: #fff;
+  opacity: 1;
+  margin: 3% auto;
+  padding: 20px;
+  width: 90%;
+  height: 90vh;
+}
+.modal .modal-content .close-button-left {
+  color: #ccc;
+  float: right;
+  font-size: 3rem;
+}
+.modal .modal-content .close-button-right {
+  color: #ccc;
+  float: right;
+  font-size: 3rem;
+}
+.modal .modal-content .close-button-left:hover,
+.modal .modal-content .close-button-left:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal .modal-content .close-button-right:hover,
+.modal .modal-content .close-button-right:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 nav {
   height: 10vh;
