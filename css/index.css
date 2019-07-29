@@ -406,6 +406,11 @@ img {
 nav {
   height: 10vh;
 }
+@media (max-width: 768px) {
+  nav {
+    height: 30vh;
+  }
+}
 nav .is-link {
   font-weight: 700;
   font-size: 2rem;
