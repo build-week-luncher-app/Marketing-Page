@@ -365,21 +365,48 @@ img {
   width: 100%;
 }
 .modal {
+  display: none;
   position: fixed;
   z-index: 3;
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
-  overflow: auto;
 }
 .modal .modal-content {
+  display: flex;
+  flex-direction: row;
   background: #fff;
   opacity: 1;
   margin: 3% auto;
   padding: 20px;
   width: 90%;
   height: 90vh;
+}
+.modal .modal-content .modal-details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+}
+.modal .modal-content .modal-details .app-button {
+  width: 30%;
+  height: 10%;
+  color: #fff;
+  background-color: #1356a4;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.modal .modal-content .modal-details .app-button:hover {
+  transform: scale(1.1);
+}
+.modal .modal-content .modal-img {
+  width: 50%;
+  object-fit: cover;
 }
 .modal .modal-content .close-button-left {
   color: #ccc;

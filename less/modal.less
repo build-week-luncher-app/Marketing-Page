@@ -4,22 +4,45 @@
 }
 
 .modal {
-  // display: none;
+  display: none;
   position: fixed;
   z-index: 3;
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
-  overflow: auto;
 
   .modal-content {
+    display: flex;
+    flex-direction: row;
     background: #fff;
     opacity: 1;
     margin: 3% auto;
     padding: 20px;
     width: 90%;
     height: 90vh;
+
+    .modal-details {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding: 2%;
+
+      .app-button {
+        .buttonStyle(30%, 10%, #fff, @leftColor, none, 40px, pointer, 2rem);
+        font-weight: 600;
+      }
+
+      .app-button:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .modal-img {
+      width: 50%;
+      object-fit: cover;
+    }
 
     .close-button-left {
       color: #ccc;
