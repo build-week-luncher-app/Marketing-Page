@@ -376,7 +376,7 @@ img {
   margin: 3% auto;
   padding: 20px;
   width: 90%;
-  height: 90vh;
+  height: 95vh;
 }
 @media (max-width: 900px) {
   .modal .modal-content {
