@@ -175,14 +175,33 @@ a {
   }
 }
 footer {
-  color: #22283B;
-  background: #f4f4f4;
-  padding: 20px 0;
-  border: 1px double #e0e0e0;
-  border-radius: 10px;
+  width: 100%;
+  height: 20vh;
+  background: #262121;
+}
+footer .footer-ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  height: 15vh;
+  padding-top: 1%;
+}
+footer .footer-ul .footer-a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+  line-height: 1.5;
+  list-style: none;
+}
+footer .footer-ul .footer-a:hover {
+  transform: scale(1.1);
+}
+footer .copyright {
+  text-align: center;
+  color: white;
+  font-weight: 600;
 }
 .tile {
   margin: 20px;
