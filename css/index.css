@@ -226,7 +226,7 @@ img {
 }
 .main-content .left-content {
   left: 0;
-  background: url('/src/img/9.png') center center no-repeat;
+  background: url('/src/img/split-left.png') center center no-repeat;
   background-size: cover;
   position: absolute;
   width: 50%;
@@ -285,7 +285,7 @@ img {
 }
 .main-content .right-content {
   right: 0;
-  background: url('/src/img/17.png') center center no-repeat;
+  background: url('/src/img/split-right.png') center center no-repeat;
   background-size: cover;
   position: absolute;
   width: 50%;
@@ -373,11 +373,15 @@ img {
   display: flex;
   flex-direction: row;
   background: #fff;
-  opacity: 1;
   margin: 3% auto;
   padding: 20px;
   width: 90%;
   height: 90vh;
+}
+@media (max-width: 900px) {
+  .modal .modal-content {
+    height: 95vh;
+  }
 }
 .modal .modal-content .modal-details {
   display: flex;
@@ -385,6 +389,9 @@ img {
   flex-direction: column;
   align-items: center;
   padding: 2%;
+}
+.modal .modal-content .modal-details h2 {
+  padding-bottom: 2%;
 }
 .modal .modal-content .modal-details .app-button {
   width: 30%;
@@ -403,6 +410,11 @@ img {
 .modal .modal-content .modal-img {
   width: 50%;
   object-fit: cover;
+}
+@media (max-width: 900px) {
+  .modal .modal-content .modal-img {
+    display: none;
+  }
 }
 .modal .modal-content .close-button-left {
   color: #ccc;
@@ -505,7 +517,7 @@ footer .copyright {
   z-index: 3;
   font-weight: 600;
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .hero-section .headline {
     font-size: 8rem;
   }
