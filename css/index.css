@@ -376,11 +376,11 @@ img {
   margin: 3% auto;
   padding: 20px;
   width: 90%;
-  height: 95vh;
+  height: 90vh;
 }
 @media (max-width: 900px) {
   .modal .modal-content {
-    height: 95vh;
+    max-height: 90vh;
   }
 }
 .modal .modal-content .modal-details {
@@ -404,11 +404,21 @@ img {
   font-size: 2rem;
   font-weight: 600;
 }
+@media (max-width: 1115px) {
+  .modal .modal-content .modal-details .app-button {
+    width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .modal .modal-content .modal-details .app-button {
+    width: 100%;
+  }
+}
 .modal .modal-content .modal-details .app-button:hover {
   transform: scale(1.1);
 }
 .modal .modal-content .modal-img {
-  width: 50%;
+  width: 55%;
   object-fit: cover;
 }
 @media (max-width: 900px) {
