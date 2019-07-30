@@ -471,7 +471,7 @@ footer .footer-ul {
   justify-content: space-around;
   align-items: center;
   height: 15vh;
-  padding-top: 1%;
+  padding-top: 3%;
 }
 footer .footer-ul .footer-a {
   font-family: 'Roboto', sans-serif;
@@ -684,4 +684,60 @@ footer .copyright {
 }
 .lower-about-content .test-container .test-details .test-btn:hover {
   transform: scale(1.1);
+}
+.contact-form {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+}
+.contact-form .address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  background: url('/src/img/lockers.jpg') center center no-repeat;
+  background-size: cover;
+}
+.contact-form .contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 70%;
+  margin: 0 auto;
+  background: url('/src/img/library.jpg') center center no-repeat;
+  background-size: cover;
+}
+.contact-form .contact-container .contact-content {
+  height: 80vh;
+  width: 80%;
+  border-radius: 5px;
+  background-color: #ccc;
+  padding: 20px;
+}
+.contact-form .contact-container .contact-content input[type=text],
+.contact-form .contact-container .contact-content select,
+.contact-form .contact-container .contact-content textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.contact-form .contact-container .contact-content input[type=submit] {
+  background-color: #1356a4;
+  width: 20%;
+  float: right;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.contact-form .contact-container .contact-content input[type=submit]:hover {
+  background-color: #33a1a1;
 }
