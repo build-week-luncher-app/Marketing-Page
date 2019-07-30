@@ -7,7 +7,6 @@ const closeFeedBtn = document.querySelector('.close-button-right');
 
 // Listen for open click
 luncherModalBtn.addEventListener('click', openLuncherModal);
-
 feedModalBtn.addEventListener('click', openFeedModal);
 
 // Listen for close click
