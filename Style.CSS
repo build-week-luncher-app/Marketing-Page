@@ -1,0 +1,102 @@
+.heading{
+    display: inline;
+
+}
+body{
+    margin:0;
+}
+
+body nav{
+    text-align: right;
+    margin: 0 3% 0 0;
+
+}
+
+#logo{
+    margin: 2% 0 0 3%;
+}
+    
+
+#navi a{
+    font-size: 140%;
+    padding: 1%;
+    color: #015499;
+}
+
+.middle{
+    margin: 8% 2%;
+    background-color:#015499
+
+}
+.middle h2{
+    text-align: center;
+    color: white;
+    margin: 0;
+    font-size: 250%;
+}
+.middle #imgdiv{
+    display: inline-flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    padding: 5% 5%;
+    align-items: center;
+}
+
+.middle #imgdiv .midimg{
+    padding: 0 3% 3%;
+}
+
+.middle h4{
+    text-align: center;
+    color: white;
+    ;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1356A4;
+    border-style:solid;
+    border-left:none;
+    border-right:none;
+    border-bottom:none;
+    border-color:#AEF082;
+    border-width: 3rem;
+}
+
+.contact p{
+    color: white;
+}
+
+#contactinfo{
+    margin: 5%;
+}
+
+#address{
+    margin-right:5%;
+    margin-top:4%;
+}
+
+#address h4{
+    color:#AEF082;
+    font-size:120%;
+}
+
+.follow h5{
+    color:#AEF082;
+    font-size:120%;
+}
+
+.follow{
+    margin-right: 5%;
+    margin-top: 4%;
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #1356A4;
+    color: white;
+    word-spacing:100px;
+}
