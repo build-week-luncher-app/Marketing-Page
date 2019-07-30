@@ -1,7 +1,7 @@
 window.onload = function () {
     
     /* event listener */
-    document.getElementsByName("share")[0].addEventListener('change', doThing);
+    document.getElementsByName("submit")[0].addEventListener('click', doThing);
     
     /* function */
     function doThing(){
