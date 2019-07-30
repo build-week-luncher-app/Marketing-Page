@@ -13,7 +13,6 @@ tl.fromTo(hero, 1, { height: "0%" }, { height: "90%", ease: Power2.easeInOut })
   .fromTo(nav, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, "-=0.3")
   .fromTo(headline, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, "-=0.3");
 
-
 // Animation from swiper.js
 let swiper = new Swiper('.swiper-container', {
   effect: 'coverflow',
