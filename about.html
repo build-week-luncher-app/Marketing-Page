@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet"/>
+    <title>Luncher - About</title>
+  </head>
+  <body>
+    <header>
+      <nav class="level">
+        <p class="level-item has-text-centered">
+          <a class="link is-link" href="/index.html"><strong>Home</strong></a>
+        </p>
+        <p class="level-item has-text-centered">
+          <a class="link is-link" href="/about.html"><strong>About</strong></a>
+        </p>
+        <p class="level-item has-text-centered">
+          <img src="src/logo.png" alt="logo" style="height: 40px; width: auto;">
+        </p>
+        <p class="level-item has-text-centered">
+          <a class="link is-link" href="/testimonials.html"><strong>Testimonials</strong></a>
+        </p>
+        <p class="level-item has-text-centered">
+          <a class="link is-link" href="/contact.html"><strong>Contact</strong></a>
+        </p>
+      </nav>
+    </header>
+      <!-- Hero image for about page with heading -->
+      <section class="hero-section">
+        <div class="hero">
+          <img src="./src/img/hero.png" alt="Hero image." />
+          <h1 class="headline">
+            Time<br />
+            To <br />
+            Make <br />
+            A <br />
+            Difference <br />
+          </h1>
+        </div>
+      </section>
+
+    <div class="slider"></div>
+
+    <!-- Split Main Section for About and Why/CTA -->
+    <section class="main-content">
+      <div class="left-content">
+        <h1>ABOUT <br /> LUNCHER</h1>
+        <a class="split-button luncher">Read More</a>
+        <div id="split-modal-left" class="modal">
+          <div class="modal-content">
+            <span class="close-button-left">&times;</span>
+            <div class="modal-details">             
+              <h2>About Luncher</h2>
+              <p>No kid should ever go hungry. Every single day, millions of children around the world go without food. Here at Luncher, we aim to solve this problem by providing a platform for schools to broadcast the needs of their students. School administrators are able to update their funding needs, showing exactly how much money the school needs to provide food for each every student. Community members, like you, are able to view a list of schools requesting financial support to help provide food for their students. No amount of money is too little and all proceeds go directly to the school.</p>
+              <p>We aim to alleviate the pressure of school systems unable to meet the demands of their student body with their current budget. Luncher provides a platform for those schools to voice and express their need for more funding to solve the issue of children going hungry. Luncher is merely the platform. It is you, the community, that makes the difference in the lives of children all over the world.</p>
+            </div>
+            <img class="modal-img" src="src/img/modal-left.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="right-content">
+        <h1>HELP FEED <br /> THE KIDS</h1>
+        <a class="split-button feed">Read More</a>
+        <div id="split-modal-right" class="modal">
+          <div class="modal-content">
+            <span class="close-button-right">&times;</span>
+            <div class="modal-details">
+              <h2>Why It Is Important</h2>
+              <p>Surprisingly, even in the United States of America, there are nearly 22 million children that are relying on the school system for reduced or free lunches. Many of those schools do not have the budget to support the cost of feeding the children, especially in lower-income areas where the demand is higher. According to research, there are 13 million children that attend school hungry.</p>
+              <p>There are many resources that show the detriment child hunger has on learning. The negative impact on the absorption of material, psychological side effects, and nutritional deficiency are huge factors in a child's academic performance. This also directly impacts psychological development according to the <a href="http://www.nea.org/home/39282.htm" target="_blank">American Journal of Nutrition</a>.</p>
+              <p>So, today is a day you can make a real difference in the future of millions of children around our country. Invest in their future. Let's make sure no child has to go hungry and solve this very real issue together.</p>
+              <button class="app-button">DONATE</button>
+            </div>
+            <img class="modal-img" src="src/img/modal-right.png">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet the team section -->
+    <section class="team">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="img-container">
+              <img src="/src/img/jabari.png" alt="Jabari photo" />
+            </div>
+            <div class="dev-info">
+              <h3>Jabari Finney<br /><span>UI/UX Developer</span></h3>
+              <div class="social-icons">
+                <a href="https://github.com/Jabari-Finney" target="_blank">
+                  <img
+                    class="icons"
+                    height="32"
+                    width="32"
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg"
+                  />
+                </a>
+                <a href="https://www.linkedin.com/in/jabari-finney-2a78ab18b/" target="_blank">
+                  <img
+                    class="icons"
+                    height="32"
+                    width="32"
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg"
+                  />
+                </a>
+                <a href="https://twitter.com/JabariTahj" target="_blank">
+                  <img
+                    class="icons"
+                    height="32"
+                    width="32"
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/twitter.svg"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-container">
+              <img src="/src/img/nick.png" alt="Nick photo" />
+            </div>
+            <div class="dev-info">
+              <h3>Nick Durbin<br /><span>UI/UX Developer</span></h3>
+              <div class="social-icons">
+                <a href="https://github.com/nickdurbin" target="_blank">
+                  <img
+                    class="icons"
+                    height="32"
+                    width="32"
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg"
+                  />
+                </a>
+                <a href="https://www.linkedin.com/in/ndurbin/" target="_blank">
+                  <img
+                    class="icons"
+                    height="32"
+                    width="32"
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg"
+                  />
+                </a>
+                <a href="https://twitter.com/durbCodes/" target="_blank">
+                  <img
+                    class="icons"
+                    height="32"
+                    width="32"
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/twitter.svg"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-container">
+              <img src="/src/img/kyle.png" alt="Kyle photo" />
+            </div>
+            <div class="dev-info">
+              <h3>Kyle Leonard<br /><span>UI/UX Developer</span></h3>
+              <div class="social-icons">
+                <a href="https://github.com/kdleonard93" target="_blank">
+                  <img
+                    class="icons"
+                    height="32"
+                    width="32"
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg"
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/kyle-leonard93/"
+                  target="_blank"
+                >
+                  <img
+                    class="icons"
+                    height="32"
+                    width="32"
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg"
+                  />
+                </a>
+                <a href="https://twitter.com/RingoMandingo93" target="_blank">
+                  <img
+                    class="icons"
+                    height="32"
+                    width="32"
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/twitter.svg"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-container">
+              <img src="/src/img/cobrettie.png" alt="Cobrettie photo" />
+            </div>
+            <div class="dev-info">
+              <h3>Cobrettie Garner<br /><span>React Developer</span></h3>
+              <div class="social-icons">
+                <a href="https://github.com/Cobrettie" target="_blank">
+                  <img
+                    class="icons"
+                    height="32"
+                    width="32"
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg"
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/cobrettie-garner-961b30167/"
+                  target="_blank"
+                >
+                  <img
+                    class="icons"
+                    height="32"
+                    width="32"
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg"
+                  />
+                </a>
+                <a href="https://twitter.com/CobrettieG" target="_blank">
+                  <img
+                    class="icons"
+                    height="32"
+                    width="32"
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/twitter.svg"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-container">
+              <img src="/src/img/natalie.png" alt="Natalie photo" />
+            </div>
+            <div class="dev-info">
+              <h3>Natalie McCroy<br /><span>React Developer</span></h3>
+              <div class="social-icons">
+                <a href="https://github.com/nataliemac81" target="_blank">
+                  <img
+                    class="icons"
+                    height="32"
+                    width="32"
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg"
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/nataliemccroy/"
+                  target="_blank"
+                >
+                  <img
+                    class="icons"
+                    height="32"
+                    width="32"
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg"
+                  />
+                </a>
+                <a href="https://twitter.com/natmccroy" target="_blank">
+                  <img
+                    class="icons"
+                    height="32"
+                    width="32"
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/twitter.svg"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-container">
+              <img src="/src/img/derrick.png" alt="Derrick photo" />
+            </div>
+            <div class="dev-info">
+              <h3>Derrick Mei<br /><span>Backend Steward</span></h3>
+              <div class="social-icons">
+                <a href="https://github.com/Derrick-Mei" target="_blank">
+                  <img
+                    class="icons"
+                    height="32"
+                    width="32"
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg"
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/derrickmei/"
+                  target="_blank"
+                >
+                  <img
+                    class="icons"
+                    height="32"
+                    width="32"
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg"
+                  />
+                </a>
+                <a href="http://www.twitter.com/theluncherapp" target="_blank">
+                  <img
+                    class="icons"
+                    height="32"
+                    width="32"
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/twitter.svg"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Introduction to a school and link to Testimonials Page -->
+    <section class="lower-about-content">
+      <div class="test-container">
+        <div class="test-img">
+          <img src="/src/img/test.jpg" />
+        </div>
+        <div class="test-details">
+          <div class="test-content">
+            <h2>Meet St. Jude's</h2>
+            <p>
+              A little school with an annual budget of a few thousand dollars was given the opportunity to request funding on Luncher and the community responded. St. Jude's requested a mere $3,000 to feed its 112 students for the fall term, and the administration was pleasantly surprised when it was able to raise 5x the amount.
+            </p>
+            <p>
+              The school will now be able to support student lunchers and fight student hunger for 3 more years with its current budget. This was an amazing example of community, togetherness, and a willingness to combat hunger for children around the world. If you want to hear more amazing stories, then please click the button below.
+            </p>
+            <a href="/testimonials.html"><button class="test-btn"></a>
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+      <div class="footer-ul">
+        <ul>
+          <li><a class="footer-a" href="/index.html">Home</a></li>
+          <li><a class="footer-a" href="/projects.html">Projects</a></li>
+          <li><a class="footer-a" href="/about.html">About</a></li>
+          <li><a class="footer-a" href="/testimonials.html">Testimonials</a></li>
+          <li><a class="footer-a" href="/contact.html">Contact</a></li>
+        </ul>
+
+        <div class="social-icons">
+          <a href="https://github.com/build-week-luncher-app" target="_blank">
+            <img
+              class="icons"
+              height="32"
+              width="32"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/luncher-app/"
+            target="_blank"
+          >
+            <img
+              class="icons"
+              height="32"
+              width="32"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg"
+            />
+          </a>
+          <a href="http://www.twitter.com/theluncherapp" target="_blank">
+            <img
+              class="icons"
+              height="32"
+              width="32"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/twitter.svg"
+            />
+          </a>
+        </div>
+
+        <ul>
+          <li><a class="footer-a" href="/terms.html">Terms</a></li>
+          <li><a class="footer-a" href="/services.html">Services</a></li>
+          <li><a class="footer-a" href="https://github.com/build-week-luncher-app">GitHub</a></li>
+          <li><a class="footer-a" href="/resources.html">Resources</a></li>
+          <li><a class="footer-a" href="/blog.html">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="copyright">
+        <p> Luncher - Copyright &copy 2019 </p>
+      </div>
+    </footer>
+
+    <!-- GSAP for Tween Animations -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+      integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk="
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript" src="javascript/swiper.min.js"></script>
+    <script type="text/javascript" src="javascript/index.js"></script>
+    <script type="text/javascript" src="javascript/split.js"></script>
+    <script type="text/javascript" src="javascript/modal.js"></script>
+  </body>
+</html>
