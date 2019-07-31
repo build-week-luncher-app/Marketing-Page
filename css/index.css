@@ -699,6 +699,7 @@ footer .copyright {
 }
 .lower-about-content .test-container .test-details .test-btn:hover {
   transform: scale(1.1);
+  background-color: #47b2ff;
 }
 .contact-form {
   display: flex;
