@@ -1,14 +1,16 @@
 footer {
   width: 100%;
-  height: 20vh;
   background: #262121;
 
   .footer-ul  {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 15vh;
-    padding-top: 3%;
+    padding-top: 2%;
+
+    @media @phoneHeight {
+      max-height: 100%;
+    }
 
     .footer-a {
       .navLink(none, white, 1.6rem, pointer);
