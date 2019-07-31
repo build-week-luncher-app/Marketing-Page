@@ -899,3 +899,22 @@ footer .copyright {
 .contact-form .contact-container .contact-content input[type=submit]:hover {
   background-color: #33a1a1;
 }
+.terms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #000;
+  font-style: Helvetica, sans-serif;
+}
+.terms h1 {
+  padding: 2% 0;
+}
+.terms h3 {
+  font-size: 2.5rem;
+  padding: 2% 0;
+}
+.terms p {
+  padding: 1%;
+}
