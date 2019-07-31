@@ -44,22 +44,41 @@
       </nav>
     </header>
 
-    <section class="test">
-        <button class="split-button luncher">Read More</button>
-        
-        <div id="split-modal" class="modal">
-          <div class="modal-content">
-            <div class="modal-header">
-              <span class="close-button">&times;</span>
-              <h2>Modal Header</h2>
-            </div>
-            <div class="modal-details">
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id magni voluptatum totam tempora, sunt explicabo. Libero tempora, deleniti magnam ex, deserunt laboriosam in veritatis quidem iste eveniet, quibusdam impedit commodi.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam unde tempore error facilis, nam minus nemo exercitationem magni commodi repellat vitae, tempora amet nostrum, enim voluptatum. Reprehenderit cum vitae quia.</p>
-            </div>
+    <section class="contact-form">
+      <div class="address-background">
+        <div class="address-container">
+          <div class="address">
+            <img class='contact-img' src='src/logo.png'>
+            <p>
+              1234 Luncher Drive<br />
+              Chicago, IL 83245<br />
+              United States<br />
+              <br />
+              email: luncherapp1@gmail.com
+            </p>
           </div>
         </div>
+      </div>
+      <div class="contact-container"> 
+        <div class="contact-content">
+          <h1>Contact Luncher</h1>
+          <form action="https://formspree.io/luncherapp1@gmail.com" method="POST" >
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name..">
         
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" name="email" placeholder="Your email..">
+        
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Write something.."></textarea>
+        
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
     </section>
 
     <!-- Footer section -->
@@ -119,19 +138,5 @@
       </div>
     </footer>
 
-    <!-- GSAP for Tween Animations -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
-      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
-      integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk="
-      crossorigin="anonymous"
-    ></script>
-
-    <script type="text/javascript" src="javascript/index.js"></script>
-    <script type="text/javascript" src="javascript/modal.js"></script>
   </body>
 </html>
