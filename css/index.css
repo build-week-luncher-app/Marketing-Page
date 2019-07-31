@@ -717,7 +717,7 @@ footer .copyright {
   width: 80%;
   height: 50%;
   background: #fff;
-  border: #1356a4 2px solid;
+  border: #1356a4 4px solid;
   border-radius: 50%;
 }
 @media (max-width: 1000px) {
@@ -772,13 +772,25 @@ footer .copyright {
 .contact-form .contact-container .contact-content {
   height: 80vh;
   width: 80%;
-  border-radius: 5px;
-  background-color: #ccc;
+  border: #1356a4 4px solid;
+  border-radius: 15px;
+  background: url('/src/img/pencils.jpg') center center no-repeat;
+  background-size: cover;
   padding: 20px;
 }
 @media (max-width: 768px) {
   .contact-form .contact-container .contact-content {
-    height: 50vh;
+    height: 55vh;
+  }
+}
+.contact-form .contact-container .contact-content h1 {
+  text-align: center;
+  padding: 2%;
+  color: #1356a4;
+}
+@media (max-width: 500px) {
+  .contact-form .contact-container .contact-content h1 {
+    font-size: 3rem;
   }
 }
 .contact-form .contact-container .contact-content input[type=text],
@@ -793,8 +805,13 @@ footer .copyright {
   margin-bottom: 16px;
   resize: vertical;
 }
+.contact-form .contact-container .contact-content label {
+  color: #1356a4;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
 .contact-form .contact-container .contact-content textarea#subject {
-  height: 300px;
+  height: 150px;
 }
 @media (max-width: 768px) {
   .contact-form .contact-container .contact-content textarea#subject {

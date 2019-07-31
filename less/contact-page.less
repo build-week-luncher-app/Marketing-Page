@@ -28,7 +28,7 @@
       width: 80%;
       height: 50%;
       background: #fff;
-      border: @leftColor 2px solid;
+      border: @leftColor 4px solid;
       border-radius: 50%;
 
       @media @tablet {
@@ -84,12 +84,24 @@
     .contact-content {
       height: 80vh;
       width: 80%;
-      border-radius: 5px;
-      background-color: #ccc;
+      border: @leftColor 4px solid;
+      border-radius: 15px;
+      background: url('/src/img/pencils.jpg') center center no-repeat;
+      background-size: cover;
       padding: 20px;
 
       @media @navChange {
-        height: 50vh;
+        height: 55vh;
+      }
+
+      h1 {
+        text-align: center;
+        padding: 2%;
+        color: @leftColor;
+
+        @media @phone {
+          font-size: 3rem;
+        }
       }
 
       input[type=text], select, textarea {
@@ -103,8 +115,14 @@
         resize: vertical;
       }
 
+      label {
+        color: @leftColor;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+
       textarea#subject {
-        height: 300px;
+        height: 150px;
 
         @media @navChange {
           height: 100px;
