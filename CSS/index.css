@@ -238,12 +238,12 @@ html button {
     flex-direction: column;
   }
 }
-.middle #info1 img {
+.middle #info1 .image1 {
   margin: 5%;
   width: 50%;
 }
 @media (max-width: 800px) {
-  .middle #info1 img {
+  .middle #info1 .image1 {
     width: 100%;
     margin: 0;
   }
