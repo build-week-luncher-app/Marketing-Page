@@ -728,7 +728,6 @@ footer .copyright {
 @media (max-height: 640px) {
   .contact-form .address-background {
     max-height: 100%;
-    height: 50vh;
   }
 }
 .contact-form .address-background .address-container {
@@ -768,6 +767,8 @@ footer .copyright {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-height: 100%;
 }
 .contact-form .address-background .address-container .address .contact-img {
   height: 20%;
