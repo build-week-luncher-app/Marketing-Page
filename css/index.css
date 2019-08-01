@@ -399,12 +399,23 @@ img {
   flex-direction: column;
   align-items: center;
   padding: 2%;
+  overflow-y: scroll;
 }
 .modal .modal-content .modal-details h2 {
   padding-bottom: 2%;
 }
+@media (max-width: 500px) {
+  .modal .modal-content .modal-details h2 {
+    font-size: 2.2rem;
+  }
+}
 .modal .modal-content .modal-details p {
-  padding-bottom: 1%;
+  padding-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .modal .modal-content .modal-details p {
+    font-size: 1.4rem;
+  }
 }
 .modal .modal-content .modal-details .app-button {
   width: 35%;
