@@ -233,7 +233,7 @@ img {
 }
 .main-content .left-content {
   left: 0;
-  background: url('/src/img/split-left.png') center center no-repeat;
+  background: url('/img/split-left.png') center center no-repeat;
   background-size: cover;
   position: absolute;
   width: 50%;
@@ -292,7 +292,7 @@ img {
 }
 .main-content .right-content {
   right: 0;
-  background: url('/src/img/split-right.png') center center no-repeat;
+  background: url('/img/split-right.png') center center no-repeat;
   background-size: cover;
   position: absolute;
   width: 50%;
