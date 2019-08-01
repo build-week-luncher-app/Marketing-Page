@@ -28,7 +28,7 @@ html{
         }
     }
     
-    button{
+    .btn{
         background-color: #1456A3;
         border-radius: 12%;
         color: white;
@@ -60,7 +60,7 @@ html{
             width: 100%;
             
             @media(max-width:800px){
-                flex-direction: column;
+                flex-direction: column-reverse;
             }
         
 
@@ -74,6 +74,8 @@ html{
                 @media(max-width:800px){
                     width:100%;
                     margin:0;
+                     
+
                 }
             }
 
@@ -91,6 +93,8 @@ html{
                 @media(max-width:800px){
                     width:100%;
                     margin:0;
+                    border:none;
+                    font-size:2rem;
                 }
             }
         }
@@ -131,6 +135,8 @@ html{
                     width:100%;
                     margin:0;
                     font-size:2rem;
+                    border:none;
+    
                 }
 
             }
@@ -139,13 +145,17 @@ html{
     }
 
     #tag{
-        background-color: #1456A3;
+        background-color: #1456a3;
 
         div{
-            font-size: 300%;
+            font-size: 3rem;
             color: white;
             text-align: center;
             padding-top:5%;
             padding-bottom:5%;
+
+            @media(max-width: width 800px){
+                font-size:1rem;
         }
     }
+}
