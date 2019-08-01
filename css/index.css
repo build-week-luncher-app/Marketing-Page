@@ -134,15 +134,15 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
-  scroll-behavior: smooth;
+  font-family: 'Ubuntu', sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 h1 {
   font-size: 4rem;
@@ -150,7 +150,6 @@ h1 {
 h2 {
   font-size: 3.2rem;
 }
-
 h3 {
   font-size: 2.8rem;
 }
@@ -165,27 +164,6 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-}
-a {
-  font-weight: 700;
-}
-@media (max-width: 768px) {
-  nav {
-    height: 30vh;
-  }
-}
-@media (max-width: 800px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media (max-width: 500px) {
-  nav {
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-  }
 }
 img {
   max-width: 100%;
@@ -477,13 +455,29 @@ img {
   text-decoration: none;
   cursor: pointer;
 }
+a {
+  font-weight: 700;
+}
 nav {
   height: 10vh;
 }
 @media (max-width: 768px) {
   nav {
-    height: 25vh;
+    height: 30vh;
     margin-top: 3%;
+  }
+}
+@media (max-width: 800px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  nav {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (max-height: 900px) {
@@ -526,9 +520,6 @@ footer .copyright {
   text-align: center;
   color: white;
   font-weight: 600;
-}
-.tile {
-  margin: 20px;
 }
 .hero-section {
   display: flex;
@@ -749,7 +740,7 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   width: 40%;
-  background: url('/src/img/lockers.jpg') center center no-repeat;
+  background: url('/img/lockers.jpg') center center no-repeat;
   background-size: cover;
 }
 @media (max-width: 768px) {
@@ -825,7 +816,7 @@ footer .copyright {
   height: 100vh;
   width: 70%;
   margin: 0 auto;
-  background: url('/src/img/library.jpg') center center no-repeat;
+  background: url('/img/library.jpg') center center no-repeat;
   background-size: cover;
 }
 @media (max-width: 768px) {
@@ -844,7 +835,7 @@ footer .copyright {
   width: 80%;
   border: #1356a4 4px solid;
   border-radius: 15px;
-  background: url('/src/img/pencils.jpg') center center no-repeat;
+  background: url('/img/pencils.jpg') center center no-repeat;
   background-size: cover;
   padding: 20px;
   overflow-y: scroll;
@@ -927,18 +918,37 @@ footer .copyright {
 .contact-form .contact-container .contact-content input[type=submit]:hover {
   background-color: #33a1a1;
 }
+.tile {
+  margin: 20px;
+}
 .resource-main-content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1%;
-  grid-auto-rows: minmax(300px, auto);
-  width: 100%;
-  height: 100vh;
-  max-height: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 2%;
+  grid-row-gap: 2%;
 }
 .resource-main-content .resource-side-panel {
+  grid-area: 0.125;
   background: #2f4f4f;
-  width: 20%;
+}
+.resource-main-content .div1 {
+  grid-area: 0.08333333;
+}
+.resource-main-content .div2 {
+  grid-area: 0.04166667;
+}
+.resource-main-content .resource-container .div3 {
+  grid-area: 0.11111111;
+}
+.resource-main-content .div4 {
+  grid-area: 0.05555556;
+}
+.resource-main-content .div5 {
+  grid-area: 0.125;
+}
+.resource-main-content .div6 {
+  grid-area: 0.0625;
 }
 .terms {
   display: flex;
