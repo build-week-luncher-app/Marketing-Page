@@ -1,25 +1,18 @@
-a {
-    font-weight: 700;
-}
-
 nav {
-  height: 15vh;
+  height: 10vh;
   margin-top: 1%;
 
-  @media @navChange {
-    height: 30vh;
+  @media @tablet {
+    height: 20vh;
     margin-top: 3%;
+    flex-direction: column;
+    align-items: center;
   }
   
-  @media @tablet {
-      flex-direction: column;
-      align-items: center;
-  }
-
   @media @phone {
-      flex-flow: column wrap;
-      justify-content: center;
-      align-items: center;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
   }
 
   @media @mobileHeight {
@@ -38,5 +31,4 @@ nav {
       border-color: lightgray
     }
   }
-    
 }
