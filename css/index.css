@@ -874,12 +874,7 @@ footer .copyright {
   }
 }
 .contact-form .contact-container .contact-content textarea#subject {
-  height: 150px;
-}
-@media (max-width: 768px) {
-  .contact-form .contact-container .contact-content textarea#subject {
-    height: 100px;
-  }
+  height: 200px;
 }
 .contact-form .contact-container .contact-content input[type=submit] {
   background-color: #1356a4;
