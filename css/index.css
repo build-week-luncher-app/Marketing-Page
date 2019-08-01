@@ -220,6 +220,9 @@ img {
   text-align: center;
   font-weight: 600;
 }
+.team .swiper-container .swiper-slide .dev-info h3 {
+  font-size: 2.3rem;
+}
 .team .swiper-container .swiper-slide .dev-info span {
   color: #1356a4;
   font-size: 1.4rem;
@@ -400,6 +403,9 @@ img {
 .modal .modal-content .modal-details h2 {
   padding-bottom: 2%;
 }
+.modal .modal-content .modal-details p {
+  padding-bottom: 1%;
+}
 .modal .modal-content .modal-details .app-button {
   width: 30%;
   height: 10%;
@@ -428,7 +434,7 @@ img {
   width: 55%;
   object-fit: cover;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .modal .modal-content .modal-img {
     display: none;
   }
@@ -459,7 +465,8 @@ a {
   font-weight: 700;
 }
 nav {
-  height: 10vh;
+  height: 15vh;
+  margin-top: 1%;
 }
 @media (max-width: 768px) {
   nav {
@@ -699,14 +706,14 @@ footer .copyright {
   line-height: 0.8em;
   color: #000;
 }
-.lower-about-content .test-container .test-details .test-details p {
+.lower-about-content .test-container .test-details p {
   max-width: 85%;
-  margin-left: 15%;
+  margin: 0 15% 2% 0;
   color: #333;
   font-size: 1.5rem;
 }
 @media (max-width: 1115px) {
-  .lower-about-content .test-container .test-details .test-details p {
+  .lower-about-content .test-container .test-details p {
     max-width: 100%;
     margin-left: 0;
   }
