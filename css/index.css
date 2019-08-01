@@ -161,6 +161,11 @@ p {
 a {
   font-weight: 700;
 }
+@media (max-width: 768px) {
+  nav {
+    height: 30vh;
+  }
+}
 @media (max-width: 800px) {
   nav {
     flex-direction: column;

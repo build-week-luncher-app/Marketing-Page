@@ -8,12 +8,13 @@
   <title>Luncher</title>
   <script src="https://kit.fontawesome.com/c45c5ca10a.js"></script>
   <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" href="css/index.css">
 
 </head>
 
 <body>
-  <header>
+  <header class="animated bounce delay-1s">
     <nav class="level" id="nav">
       <p class="level-item has-text-centered">
         <a class="link is-link" href="#home">Home</a>
@@ -46,6 +47,7 @@
     </div>
   </section>
 
+<div id="tile">
   <div class="tile is-ancestor">
     <div class="tile is-parent">
       <div class=" tile is-child box">
@@ -98,12 +100,12 @@
           velit, quis laoreet augue facilisis vitae. Nam tristique volutpat quam ut tempus. Nam sed augue urna.
         </p>
       </div>
-
     </div>
-
   </div>
+</div>
 
   <!-- USER COMMENTS -->
+  <div id="media">
   <article class="media box">
     <figure class="media-left">
       <p class="image is-64x64">
@@ -216,6 +218,7 @@
       </div>
     </div>
   </article>
+</div>
 
   <!-- FOOTER -->
   <footer>
@@ -256,8 +259,6 @@
       <p>&copy; 2019 Luncher</p>
     </div>
   </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
-    integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
 </body>
 

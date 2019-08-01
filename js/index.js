@@ -1,9 +1,10 @@
-const p = document.querySelector('.p');
+const nav = document.querySelector('#nav');
+const media = document.querySelector('#media');
+const tile = document.querySelector('#tile');
 
-
-const tween = new TweenMax();
-
-tween.fromTo(p, 1, {x:0}, {x:100});
+nav.classList.add('animated', 'bounceInRight');
+media.classList.add('animated', 'rotateInDownLeft');
+tile.classList.add('animated', 'fadeInLeft');
 
 window.onload = function () {
     
