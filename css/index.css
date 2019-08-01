@@ -134,15 +134,15 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
-  scroll-behavior: smooth;
+  font-family: 'Ubuntu', sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 h1 {
   font-size: 4rem;
@@ -150,7 +150,6 @@ h1 {
 h2 {
   font-size: 3.2rem;
 }
-
 h3 {
   font-size: 2.8rem;
 }
@@ -165,27 +164,6 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-}
-a {
-  font-weight: 700;
-}
-@media (max-width: 768px) {
-  nav {
-    height: 30vh;
-  }
-}
-@media (max-width: 800px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media (max-width: 500px) {
-  nav {
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-  }
 }
 img {
   max-width: 100%;
@@ -477,13 +455,29 @@ img {
   text-decoration: none;
   cursor: pointer;
 }
+a {
+  font-weight: 700;
+}
 nav {
   height: 10vh;
 }
 @media (max-width: 768px) {
   nav {
-    height: 25vh;
+    height: 30vh;
     margin-top: 3%;
+  }
+}
+@media (max-width: 800px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  nav {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (max-height: 900px) {
@@ -494,6 +488,13 @@ nav {
 nav .is-link {
   font-weight: 700;
   font-size: 2rem;
+  color: #1356a4;
+}
+nav .is-link:hover {
+  color: #4a4a4a;
+}
+nav .is-link:hover a {
+  border-color: lightgray;
 }
 footer {
   width: 100%;
@@ -526,9 +527,6 @@ footer .copyright {
   text-align: center;
   color: white;
   font-weight: 600;
-}
-.tile {
-  margin: 20px;
 }
 .hero-section {
   display: flex;
@@ -926,6 +924,9 @@ footer .copyright {
 }
 .contact-form .contact-container .contact-content input[type=submit]:hover {
   background-color: #33a1a1;
+}
+.tile {
+  margin: 20px;
 }
 .resource-main-content {
   display: grid;
