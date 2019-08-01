@@ -1,0 +1,85 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+
+  .modal-content {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    margin: 3% auto;
+    padding: 20px;
+    width: 90%;
+    height: 90vh;
+
+    @media @middleChange {
+      max-height: 90vh;
+    }
+
+    .modal-details {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding: 2%;
+
+      h2 {
+        padding-bottom: 2%;
+      }
+
+      .app-button {
+        .buttonStyle(30%, 10%, #fff, @leftColor, none, 40px, pointer, 2rem);
+        font-weight: 600;
+
+        @media @topChange {
+          width: 40%;
+        }
+
+        @media @phone {
+          width: 100%;
+        }
+      }
+
+      .app-button:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .modal-img {
+      width: 55%;
+      object-fit: cover;
+
+      @media @middleChange {
+        display: none;
+      }
+    }
+
+    .close-button-left {
+      color: #ccc;
+      float: right;
+      font-size: 3rem;
+    }
+
+    .close-button-right {
+      color: #ccc;
+      float: right;
+      font-size: 3rem;
+    }
+
+    .close-button-left:hover, .close-button-left:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .close-button-right:hover, .close-button-right:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
