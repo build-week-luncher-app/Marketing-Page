@@ -233,7 +233,7 @@ img {
 }
 .main-content .left-content {
   left: 0;
-  background: url('/src/img/split-left.png') center center no-repeat;
+  background: url('/img/split-left.png') center center no-repeat;
   background-size: cover;
   position: absolute;
   width: 50%;
@@ -292,7 +292,7 @@ img {
 }
 .main-content .right-content {
   right: 0;
-  background: url('/src/img/split-right.png') center center no-repeat;
+  background: url('/img/split-right.png') center center no-repeat;
   background-size: cover;
   position: absolute;
   width: 50%;
@@ -747,7 +747,7 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   width: 40%;
-  background: url('/src/img/lockers.jpg') center center no-repeat;
+  background: url('/img/lockers.jpg') center center no-repeat;
   background-size: cover;
 }
 @media (max-width: 768px) {
@@ -823,7 +823,7 @@ footer .copyright {
   height: 100vh;
   width: 70%;
   margin: 0 auto;
-  background: url('/src/img/library.jpg') center center no-repeat;
+  background: url('/img/library.jpg') center center no-repeat;
   background-size: cover;
 }
 @media (max-width: 768px) {
@@ -842,7 +842,7 @@ footer .copyright {
   width: 80%;
   border: #1356a4 4px solid;
   border-radius: 15px;
-  background: url('/src/img/pencils.jpg') center center no-repeat;
+  background: url('/img/pencils.jpg') center center no-repeat;
   background-size: cover;
   padding: 20px;
   overflow-y: scroll;
@@ -930,16 +930,32 @@ footer .copyright {
 }
 .resource-main-content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1%;
-  grid-auto-rows: minmax(300px, auto);
-  width: 100%;
-  height: 100vh;
-  max-height: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 2%;
+  grid-row-gap: 2%;
 }
 .resource-main-content .resource-side-panel {
+  grid-area: 0.125;
   background: #2f4f4f;
-  width: 20%;
+}
+.resource-main-content .div1 {
+  grid-area: 0.08333333;
+}
+.resource-main-content .div2 {
+  grid-area: 0.04166667;
+}
+.resource-main-content .resource-container .div3 {
+  grid-area: 0.11111111;
+}
+.resource-main-content .div4 {
+  grid-area: 0.05555556;
+}
+.resource-main-content .div5 {
+  grid-area: 0.125;
+}
+.resource-main-content .div6 {
+  grid-area: 0.0625;
 }
 .terms {
   display: flex;
