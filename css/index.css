@@ -488,6 +488,13 @@ nav {
 nav .is-link {
   font-weight: 700;
   font-size: 2rem;
+  color: #1356a4;
+}
+nav .is-link:hover {
+  color: #4a4a4a;
+}
+nav .is-link:hover a {
+  border-color: lightgray;
 }
 footer {
   width: 100%;
