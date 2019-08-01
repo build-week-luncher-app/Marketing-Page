@@ -699,6 +699,7 @@ footer .copyright {
 }
 .lower-about-content .test-container .test-details .test-btn:hover {
   transform: scale(1.1);
+  background-color: #47b2ff;
 }
 .contact-form {
   display: flex;
@@ -873,12 +874,7 @@ footer .copyright {
   }
 }
 .contact-form .contact-container .contact-content textarea#subject {
-  height: 150px;
-}
-@media (max-width: 768px) {
-  .contact-form .contact-container .contact-content textarea#subject {
-    height: 100px;
-  }
+  height: 200px;
 }
 .contact-form .contact-container .contact-content input[type=submit] {
   background-color: #1356a4;
@@ -898,4 +894,36 @@ footer .copyright {
 }
 .contact-form .contact-container .contact-content input[type=submit]:hover {
   background-color: #33a1a1;
+}
+.resource-main-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1%;
+  grid-auto-rows: minmax(300px, auto);
+  width: 100%;
+  height: 100vh;
+  max-height: 100%;
+}
+.resource-main-content .resource-side-panel {
+  background: #2f4f4f;
+  width: 20%;
+}
+.terms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #000;
+  font-style: Helvetica, sans-serif;
+}
+.terms h1 {
+  padding: 2% 0;
+}
+.terms h3 {
+  font-size: 2.5rem;
+  padding: 2% 0;
+}
+.terms p {
+  padding: 1%;
 }
