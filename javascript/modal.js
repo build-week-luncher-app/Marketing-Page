@@ -4,6 +4,7 @@ const luncherModalBtn = document.querySelector('.luncher');
 const feedModalBtn = document.querySelector('.feed')
 const closeLuncherBtn = document.querySelector('.close-button-left');
 const closeFeedBtn = document.querySelector('.close-button-right');
+const btnLink = document.querySelector('.app-button');
 
 // Listen for open click
 luncherModalBtn.addEventListener('click', openLuncherModal);
@@ -49,4 +50,11 @@ function outsideFeedClick(event) {
   if (event.target == feedModal) {
     feedModal.style.display = 'none';
   }
+}
+
+// Opening App with Donate Button in Modal
+btnLink.addEventListener('click', openLink);
+
+function openLink() {
+  window.location.assign('https://luncherapp.netlify.com/');
 }

@@ -220,6 +220,9 @@ img {
   text-align: center;
   font-weight: 600;
 }
+.team .swiper-container .swiper-slide .dev-info h3 {
+  font-size: 2.3rem;
+}
 .team .swiper-container .swiper-slide .dev-info span {
   color: #1356a4;
   font-size: 1.4rem;
@@ -396,13 +399,27 @@ img {
   flex-direction: column;
   align-items: center;
   padding: 2%;
+  overflow-y: scroll;
 }
 .modal .modal-content .modal-details h2 {
   padding-bottom: 2%;
 }
+@media (max-width: 500px) {
+  .modal .modal-content .modal-details h2 {
+    font-size: 2.2rem;
+  }
+}
+.modal .modal-content .modal-details p {
+  padding-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .modal .modal-content .modal-details p {
+    font-size: 1.4rem;
+  }
+}
 .modal .modal-content .modal-details .app-button {
-  width: 30%;
-  height: 10%;
+  width: 35%;
+  height: 8%;
   color: #fff;
   background-color: #1356a4;
   border: none;
@@ -423,12 +440,13 @@ img {
 }
 .modal .modal-content .modal-details .app-button:hover {
   transform: scale(1.1);
+  background: #47b2ff;
 }
 .modal .modal-content .modal-img {
   width: 55%;
   object-fit: cover;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .modal .modal-content .modal-img {
     display: none;
   }
@@ -455,20 +473,14 @@ img {
   text-decoration: none;
   cursor: pointer;
 }
-a {
-  font-weight: 700;
-}
 nav {
   height: 10vh;
-}
-@media (max-width: 768px) {
-  nav {
-    height: 30vh;
-    margin-top: 3%;
-  }
+  margin-top: 1%;
 }
 @media (max-width: 800px) {
   nav {
+    height: 20vh;
+    margin-top: 3%;
     flex-direction: column;
     align-items: center;
   }
@@ -572,7 +584,7 @@ footer .copyright {
 }
 @media (max-width: 500px) {
   .hero-section .headline {
-    top: 45%;
+    top: 50%;
     font-size: 7rem;
     line-height: 1.4;
   }
@@ -699,14 +711,14 @@ footer .copyright {
   line-height: 0.8em;
   color: #000;
 }
-.lower-about-content .test-container .test-details .test-details p {
+.lower-about-content .test-container .test-details p {
   max-width: 85%;
-  margin-left: 15%;
+  margin: 0 15% 2% 0;
   color: #333;
   font-size: 1.5rem;
 }
 @media (max-width: 1115px) {
-  .lower-about-content .test-container .test-details .test-details p {
+  .lower-about-content .test-container .test-details p {
     max-width: 100%;
     margin-left: 0;
   }
@@ -730,6 +742,34 @@ footer .copyright {
 .lower-about-content .test-container .test-details .test-btn:hover {
   transform: scale(1.1);
   background-color: #47b2ff;
+}
+.blog-main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
+}
+.blog-main-content .blog-column {
+  width: 37.5%;
+  padding: 2%;
+}
+.blog-main-content .blog-column .blog-content {
+  height: 30vh;
+  width: 100%;
+  margin-bottom: 3%;
+  border-right: 2px #1356a4 solid;
+  border-bottom: 2px #1356a4 solid;
+}
+.blog-main-content .blog-side-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #2f4f4f;
+  width: 25%;
+  font-size: 3rem;
+  color: #fff;
 }
 .contact-form {
   display: flex;
@@ -929,33 +969,32 @@ footer .copyright {
   margin: 20px;
 }
 .resource-main-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-column-gap: 2%;
-  grid-row-gap: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
 }
 .resource-main-content .resource-side-panel {
-  grid-area: 0.125;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   background: #2f4f4f;
+  width: 25%;
+  font-size: 3rem;
+  color: #fff;
 }
-.resource-main-content .div1 {
-  grid-area: 0.08333333;
+.resource-main-content .resource-column {
+  width: 37.5%;
+  padding: 2%;
 }
-.resource-main-content .div2 {
-  grid-area: 0.04166667;
-}
-.resource-main-content .resource-container .div3 {
-  grid-area: 0.11111111;
-}
-.resource-main-content .div4 {
-  grid-area: 0.05555556;
-}
-.resource-main-content .div5 {
-  grid-area: 0.125;
-}
-.resource-main-content .div6 {
-  grid-area: 0.0625;
+.resource-main-content .resource-column .resource-content {
+  height: 30vh;
+  width: 100%;
+  margin-bottom: 3%;
+  border-right: 2px #1356a4 solid;
+  border-bottom: 2px #1356a4 solid;
 }
 .terms {
   display: flex;

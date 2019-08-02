@@ -26,13 +26,26 @@
       flex-direction: column;
       align-items: center;
       padding: 2%;
+      overflow-y: scroll;
 
       h2 {
         padding-bottom: 2%;
+
+        @media @phone {
+          font-size: 2.2rem;
+        }
+      }
+
+      p {
+        padding-bottom: 2%;
+
+        @media @phone {
+          font-size: 1.4rem;
+        }
       }
 
       .app-button {
-        .buttonStyle(30%, 10%, #fff, @leftColor, none, 40px, pointer, 2rem);
+        .buttonStyle(35%, 8%, #fff, @leftColor, none, 40px, pointer, 2rem);
         font-weight: 600;
 
         @media @topChange {
@@ -46,6 +59,7 @@
 
       .app-button:hover {
         transform: scale(1.1);
+        background: @leftBtnHover;
       }
     }
 
@@ -53,7 +67,7 @@
       width: 55%;
       object-fit: cover;
 
-      @media @middleChange {
+      @media @desktop {
         display: none;
       }
     }
