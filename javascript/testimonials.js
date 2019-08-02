@@ -9,10 +9,10 @@ tile.classList.add('animated', 'fadeInLeft');
 window.onload = function () {
     
     /* event listener for submit button*/
-    document.getElementsByName("submit")[0].addEventListener('click', doThing);
+    document.getElementsByName("submit")[0].addEventListener('click', giveThanks);
     
 
-    function doThing(){
+    function giveThanks(){
        alert('Thank you for sharing!');
     }
     
