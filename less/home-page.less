@@ -1,3 +1,141 @@
-.tile {
-    margin: 20px;
+html {
+  .main-page-wrapper {
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #ffffff;
+  }
+
+  .heading {
+    background-color: #ffffff;
+  }
+
+  .welcome {
+    background-image: url('https://images.pexels.com/photos/1912868/pexels-photo-1912868.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-color: #1456a3;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .welcometo {
+      padding-top: 13%;
+      padding-left: 3%;
+      color: #1456a3;
+    }
+  }
+
+  .btn {
+    background-color: #1456a3;
+    border-radius: 12%;
+    color: white;
+    padding: 2% 2%;
+    text-align: center;
+    display: flex;
+    font-size: 150%;
+    font-family: 'Indie Flower', cursive;
+    margin-top: 10%;
+    margin-left: 7%;
+  }
+}
+
+.middle {
+  background-color: #1456a3;
+  width: 100%;
+
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #info1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    @media (max-width: 800px) {
+      flex-direction: column-reverse;
+    }
+
+    .image1 {
+      margin: 5%;
+      width: 50%;
+
+      @media (max-width: 800px) {
+        width: 100%;
+        margin: 0;
+      }
+    }
+
+    p {
+      border: solid white 5px;
+
+      margin-right: 5%;
+      text-align: center;
+      padding: 2%;
+      color: white;
+      font-size: 300%;
+      width: 50%;
+      margin-top: 2%;
+
+      @media (max-width: 800px) {
+        width: 100%;
+        margin: 0;
+        border: none;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  #info2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+
+    img {
+      margin: 5%;
+      width: 50%;
+
+      @media (max-width: 800px) {
+        width: 100%;
+        margin: 0;
+      }
+    }
+
+    p {
+      border: solid white 5px;
+      margin-left: 5%;
+      text-align: center;
+      padding: 2%;
+      color: white;
+      font-size: 3rem;
+      width: 50%;
+
+      @media (max-width: 800px) {
+        width: 100%;
+        margin: 0;
+        font-size: 2rem;
+        border: none;
+      }
+    }
+  }
+}
+
+#tag {
+  background-color: #1456a3;
+
+  div {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    @media (max-width: width 800px) {
+      font-size: 1rem;
+    }
+  }
 }
