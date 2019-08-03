@@ -1,0 +1,34 @@
+nav {
+  height: 10vh;
+  margin-top: 1%;
+
+  @media @tablet {
+    height: 20vh;
+    margin-top: 3%;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @media @phone {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media @mobileHeight {
+    height: 40%;
+  }
+
+  .is-link {
+    font-weight: 700;
+    font-size: 2rem;
+    color: @leftColor;
+  }
+
+  .is-link:hover{
+    color: #4a4a4a;
+    a {
+      border-color: lightgray
+    }
+  }
+}

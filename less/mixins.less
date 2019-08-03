@@ -1,0 +1,54 @@
+
+// Mixins
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLink(@text-d, @color, @font-s, @cursor) {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: @text-d;
+  color: @color;
+  font-size: @font-s;
+  cursor: @cursor;
+}
+
+// Button Mixins
+
+.buttonStyle(@width, @height, @color, @bg-color, @border, @border-r, @cursor, @font-s) {
+  width: @width;
+  height: @height;
+  color: @color;
+  background-color: @bg-color;
+  border: @border;
+  border-radius: @border-r;
+  cursor: @cursor;
+  font-size: @font-s;
+}
+
+.btn-radius (@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.btn-mixin (@btn-size, @btn-width, @btn-height) {
+    .btn-radius(10px);
+    font-size: @btn-size;
+    width: @btn-width;
+    height: @btn-height;
+}
+
+.btn-rev-color() {
+    color: @btn-bg-color;
+}
+// Flex Mixin
+
+.displayFlex(@flex-flow, @align, @justify) {
+  display: flex;
+  flex-flow: @flex-flow;
+  align-items: @align;
+  justify-content: @justify;
+}

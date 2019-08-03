@@ -1,0 +1,32 @@
+footer {
+  width: 100%;
+  background: #262121;
+
+  .footer-ul  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-top: 2%;
+
+    @media @phoneHeight {
+      max-height: 100%;
+    }
+
+    .footer-a {
+      .navLink(none, white, 1.6rem, pointer);
+      line-height: 1.5;
+      list-style: none;
+    }
+
+    .footer-a:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+  }
+}
