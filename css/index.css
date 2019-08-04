@@ -474,19 +474,7 @@ img {
   cursor: pointer;
 }
 nav {
-  height: 10vh;
-  margin-top: 1%;
-}
-@media (max-width: 800px) {
-  nav {
-    height: 20vh;
-    margin-top: 3%;
-  }
-}
-@media (max-height: 768px) {
-  nav {
-    height: 25vh;
-  }
+  margin: 2% 0;
 }
 nav .is-link {
   font-weight: 700;
