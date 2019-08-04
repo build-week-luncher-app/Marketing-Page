@@ -1124,3 +1124,9 @@ html .btn {
 .terms p {
   padding: 1%;
 }
+.tile {
+  margin: 10px;
+}
+#box {
+  margin: 10px !important;
+}
