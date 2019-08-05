@@ -778,8 +778,8 @@ footer .copyright {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  height: 95%;
+  width: 47%;
+  height: 98%;
   background: #1356a4;
 }
 @media (max-width: 1115px) {
@@ -794,11 +794,11 @@ footer .copyright {
 .blog-main-content .blog-column .blog-container .blog-img img {
   position: relative;
   width: 90%;
-  left: -12%;
+  right: -12%;
 }
 @media (max-width: 1115px) {
   .blog-main-content .blog-column .blog-container .blog-img img {
-    left: initial;
+    right: initial;
     width: 100%;
   }
 }
@@ -830,14 +830,14 @@ footer .copyright {
 }
 .blog-main-content .blog-column .blog-container .blog-details p {
   max-width: 85%;
-  margin: 0 15% 2% 0;
+  margin: 0 0% 2% 0%;
   color: #333;
   font-size: 1.5rem;
 }
 @media (max-width: 1115px) {
   .blog-main-content .blog-column .blog-container .blog-details p {
     max-width: 100%;
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 .blog-main-content .blog-column .blog-container .blog-details .test-btn {
@@ -854,7 +854,6 @@ footer .copyright {
   margin-top: 5px;
   letter-spacing: 1px;
   font-weight: 600;
-  float: right;
 }
 .blog-main-content .blog-column .blog-container .blog-details .test-btn:hover {
   transform: scale(1.1);
@@ -1243,8 +1242,8 @@ html .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  height: 95%;
+  width: 47%;
+  height: 98%;
   background: #1356a4;
 }
 @media (max-width: 1115px) {
