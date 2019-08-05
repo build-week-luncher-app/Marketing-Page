@@ -767,6 +767,8 @@ footer .copyright {
 @media (max-width: 500px) {
   .blog-main-content .blog-column .blog-container {
     flex-flow: column nowrap;
+    border: none;
+    margin: 0 auto;
   }
 }
 .blog-main-content .blog-column .blog-container .blog-img {
@@ -1228,6 +1230,8 @@ html .btn {
 @media (max-width: 500px) {
   .resource-main-content .resource-column .resource-container {
     flex-flow: column nowrap;
+    border: none;
+    margin: 0 auto;
   }
 }
 .resource-main-content .resource-column .resource-container .resource-img {
