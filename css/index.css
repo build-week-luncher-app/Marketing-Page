@@ -758,15 +758,17 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 95%;
+  height: 400px;
   background: #fff;
   margin: 10px 5px 5px 20px;
   border-left: 2px #1356a4 solid;
   border-bottom: 2px #1356a4 solid;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .blog-main-content .blog-column .blog-container {
     flex-flow: column nowrap;
+    width: 100%;
+    height: 60%;
     border: none;
     margin: 0 auto;
   }
@@ -776,7 +778,7 @@ footer .copyright {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 50%;
   height: 95%;
   background: #1356a4;
 }
@@ -1220,7 +1222,7 @@ html .btn {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  width: 600x;
+  width: 100%;
   height: 400px;
   background: #fff;
   margin: 10px 5px 5px 20px;
